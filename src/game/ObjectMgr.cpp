@@ -2419,7 +2419,7 @@ void ObjectMgr::LoadPlayerInfo()
             PlayerLevelInfo* pLevelInfo = &pInfo->levelInfo[current_level - 1];
 
             for (int i = 0; i < MAX_STATS; ++i)
-                pLevelInfo->stats[i] = fields[i + 3].GetUInt8();
+                pLevelInfo->stats[i] = fields[i + 3].GetUInt32();
 
             bar.step();
             ++count;
